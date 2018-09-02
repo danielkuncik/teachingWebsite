@@ -1,0 +1,14 @@
+{
+  "name": "mrkuncikdotcom",
+  "version": "1.0.0",
+  "description": "A website to communicate with students in physics class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Kuncik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
