@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href = "circuit_problems.css" type = "text/css" rel = "stylesheet" />
+
+<style>
+
+input {
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+    font-size: 30px;
+    }
+
+input.correct {
+    border-color: green;
+    border-width: medium;
+    border-style: solid;
+    }
+
+input.wrong {
+    border-color: red;
+    border-width: medium;
+    border-style: solid;
+    }
+
+button {
+    width: 200px;
+    height: 100px;
+    font-size:40px;
+}
+
+</style>
+    
+</head>
+<body>
+
+<br>
+<br>
+<canvas id = "circuitCanvas" width = "1000" height = "500"></canvas>
+
+   <!--
+<p id = "whatever"></p>
+<p id = "whatever2"></p>
+<p id = 'whatever3'></p>
+<p id = 'whatever4'></p>
+
+<p id = "badboy"></p>
+-->
+<!-- table of text spaces for answers-->
+<table id = 'answer_table'>
+
+<tr id = "top_row">
+<th></th>
+</tr>
+
+<tr id = "V_row">
+<th>Voltage (Volts)</th>
+</tr>
+    
+<tr id = "I_row">
+<th>Current (Amps)</th>
+</tr>
+
+<tr id = "R_row">
+<th>Resistance (Ohms)</th>
+</tr>
+    
+<tr id = "P_row">
+<th>Power (Watts)</th>
+</tr>
+</table>
+
+<button onclick= "answering_function()" >Answer!</button>
+
+<div id = "new_prob_space"></div>
+
+<script src = "circuit_problems.js"></script>
+<script src = "random_circuit_problem.js"></script>
+<script src = "print_random_circuit_problem.js"></script>
+    
+</body>
+</html>
