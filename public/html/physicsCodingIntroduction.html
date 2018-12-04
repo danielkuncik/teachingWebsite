@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        code {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+    </style>
+    <title>Introduction to Physics Coding Problems</title>
+</head>
+<body>
+<h1>Welcome to Physics Coding!</h1>
+<h3>Why are we coding in physics?</h3>
+<p>
+    Because real scientists don't just solve problems on pen and paper!
+    Almost all scientists these days are spending a considerable portion of time writing
+    computer code.
+    Almost all the problems that people would want to sovle today require it.
+    For example, we've solved many problems that involve a car moving at a constant acceleration.
+    Imagine now you have a rocket ship taking off. Is its acceleration constant? Certainly not.
+    How many different equations and calcualtions do you think you need to explain the motion of a rocket taking off?
+    Thousands, if not millions or billions! Humans can't do that many equations at once, but what can? A computer!
+    That's why real scientists today do so many of their calculations by writing a computer program.
+</p>
+
+<h3>
+    What are the particulars?
+</h3>
+<ul>
+    <li>
+        Language: Python
+    </li>
+    <li>
+        IDE: Cloud9
+    </li>
+</ul>
+
+<p>
+    We are going to be using a programming language called Python.
+    Python is one of the most popular languages in the world today.
+    It is the most commonly used in scientific computing (which is what we are doing)
+    and one of the top five in software development (by companies like Google, Apple, and Amazon).
+</p>
+<p>
+    Every programmer needs an Integrated Development Environment (IDE), which is a program that combines
+    unix terminals, text editors, visual representations of the file tree, and often some other features.
+    We are going to use an online, Cloud Computing IDE called Cloud9.
+    Essentially , when you log into Cloud9 you are using another computer somewhere on the internet.
+    For now, it is free for students.
+    This also means it is completely online, so you can log into your files from any computer, anywhere in the world.
+</p>
+
+
+<h3>
+    Objectives
+</h3>
+
+<ol>
+    <li>
+        <h4>
+            Get Into Cloud 9
+        </h4>
+        <ol>
+            <li>
+                I should have sent you an email with an invite link. Click that link to get started!
+            </li>
+            <li>
+                You need to enter a series of information, such as your name and a username. Pick a good username.
+            </li>
+            <li>
+                After that, check your email again! You need to set your password over a link on the email.
+            </li>
+            <li>
+                Try signing out and then back in to make sure your password works!
+            </li>
+            <li>
+                Once your in and all set, click on "Create a New Workspace"
+            </li>
+            <li>
+                Call the workspace "learning-physics-coding". Make it public.
+                For your template, chose "Python".
+            </li>
+            <li>
+                When you click "Create a new workspace" you should get to a workspace that looks like the picture below.
+                Then you're in!
+            </li>
+
+        </ol>
+    </li>
+    <li>
+        <h4>
+            Get Familiar with the Cloud 9 Interface
+        </h4>
+        <img src = '../../../playground/cloud9_screenshot.png'>
+        <p>
+            The three most important parts of the cloud 9 interface for you to understand are the
+            terminal, the text editor, and the file system.
+        </p>
+        <ul>
+            <li>
+                The <strong>file system</strong> is probably what will come most intuitively to you, as it
+                works similarly to a MacOSX or Windows file system.
+            </li>
+            <li>
+                The <strong>text editor</strong> is where you write programs that will accomplish what you need.
+                Try typing something totally random in the text editor right now!
+            </li>
+            <li>
+                The <strong>terminal</strong> is where you direct the entire operation. It is where you can create new files
+                or directories, read files, run a console for a programming language, access a database, download data from
+                the internet, etc. etc.
+                The terminal runs using an operating system called Unix.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4>
+            Very Basic Unix BASH Commands
+        </h4>
+        <p>
+            Computer programmers frequently use an operating system called Unix.
+            Your Cloud9 computer, which you are currently accessing, is a unix computer.
+            Unlike operating systems like Windows or MacOSX, you need to use typed commands to work with a unix system.
+            In this case, you enter Unix commands and reiceve the output in the terminal area of the Cloud 9 interface.
+            The type of UNIX you are using is also called BASH.
+            Try out each of the following commands!
+        </p>
+        <ul>
+            <li>
+                <code>pwd</code>: "Print Working Directory" prints what directory you are currently.
+            </li>
+            <li>
+                <code>ls</code>: "List" lists everything in the directory you are currently in.
+            </li>
+            <li>
+                <code>mkdir</code>: "Make Directory" Makes a new directory. A directory is just like a file in Windows or MacOSX.
+            </li>
+            <li>
+                <code>cd</code>: "Change directory" Changes what directory you are working in.
+            </li>
+            <li>
+                <code>cd ..</code> : This changes to the directory one above where you are in the file tree.
+            </li>
+            <li>
+                <code>cd ~ </code>: this returns to your home directory (where you started).
+            </li>
+            <li>
+                <code>rm</code>: "Remove" gets rid of something
+            </li>
+            <li>
+                <code>clear</code>: clears your terminal screen
+            </li>
+        </ul>
+        <p>
+            See if you can use these commands to do the following!
+        </p>
+        <ol>
+            <li>Make a new directory called "physics_problems."</li>
+            <li>Use "ls" to confirm that you made it. It should be in the list.</li>
+            <li>Go into that directory.</li>
+            <li>Use pwd to confirm you are in the physics_problems directory.</li>
+            <li>use "cd .." to go back.</li>
+            <li>Keep using "cd .." to go back farther into the root directory. Every time you use it, use "pwd" and "ls" to see what's going on!</li>
+            <li>Return to your home directory.</li>
+            <li>Delete the "phyiscs_problems" directory.</li>
+            <li>Use "ls" to confirm that it's gone.</li>
+            <li>Use "clear" so that you have a nice, clear terminal screen.</li>
+        </ol>
+        <p>
+            If you have any interest at all in any career that involves coding and program,
+            it behooves you to become as comfortable as possible with unix commands.
+        </p>
+    </li>
+    <li>
+        <h4>
+            Running The Python Console and generating a "Hello World" program.
+        </h4>
+        <p>
+            We will be coding using a programming language called <strong>Python</strong>.
+            Python is the most commonly used langauge for scientific computing!
+            Scientific computing just means solving scientific problems by computing, which is what we are going to do.
+        </p>
+        <p>
+            To begin running Python, we are going to use the <strong>Python Console</strong>.
+            The console allows you to enter commands and immediately get a result, as opposed to the more common
+            method of coding in which you write several lines of code (we are going to do that also!).
+        </p>
+        <p>
+            To start running the Python console, type <code>python</code> into your terminal and click enter.
+            You will know you are inside because you see a <code> >>> </code>.
+        </p>
+        <p>
+            Before doing anything else, know how to exit the Python Console, so you don't get trapped inside!
+            To exit, just type <br>
+            <code>exit()</code> <br>
+            Before doing anything else, exit and reenter. That way, you know you're in control of where you are!
+        </p>
+        <p>
+            Whenver someone is learning a new computer language, the first thing they do is create
+            a <i>Hello World Program</i>. The program is one that simply prints the words "Hello World!"
+            to the screen. You can create a Hello World Program in python by typing the following line:
+            <br>
+            <code>print('Hello World!')</code>.
+        </p>
+        <p>
+            Or, you can try it with anything else you want to say. Note that youse can use double quotes or single qoutes,
+            but it doesn't work if you have no quotes.
+        </p>
+        <ul>
+            <li>
+                <code>print('hello physics class')</code>
+            </li>
+            <li>
+                <code>print("Brady is the GOAT")</code>
+            </li>
+            <li>
+                <code>print("The capital of Maine is Augusta")</code>
+            </li>
+            <li>
+                <code>print(hello mr kuncik)</code> This returns an error! Why?
+            </li>
+        </ul>
+
+        <p>
+            Bonus Question:
+            <br>
+            <code>print('Hello it's me. I was wondering if after all these years you'd like to meet.')</code>
+            <br>
+            This code returns an error. What's wrong? How can you fix it?
+        </p>
+
+    </li>
+    <li>
+        <h4>
+            Using Python as a Calculator
+        </h4>
+        <p>
+            To practice with how Python works, try typing the following commands into the console.
+            what happens with each of them? Was it what you expected?
+        </p>
+        <ul>
+            <li>
+                <code>2 + 2</code>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4>
+            Running programs from files
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Defining Functions
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Physics Function Challenges
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Lists and Arrays
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Graphing
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Reading Data From Files
+        </h4>
+    </li>
+    <li>
+        <h4>
+            Physics Challenge: Differentiating a Position-Time Curve to Create a Velocity-Time Curve
+        </h4>
+    </li>
+</ol>
+
+
+
+
+</body>
+</html>
