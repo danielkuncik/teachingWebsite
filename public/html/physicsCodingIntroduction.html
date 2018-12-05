@@ -117,7 +117,7 @@
         <h4>
             Get Familiar with the Cloud 9 Interface
         </h4>
-        <img src = 'cloud9_screenshot.png' width = '600px' height = 'auto'>
+        <img src = '../images/cloud9_screenshot.png' width = '600px' height = 'auto'>
         <p>
             The three most important parts of the cloud 9 interface for you to understand are the
             terminal, the text editor, and the file system.
@@ -185,21 +185,46 @@
         </p>
         <ol>
             <li>
+                First, see what directory you are in with <code>pwd</code>.
+                If you haven't done anything yet,
+                you should be in a directory called <code>/home/ubuntu/workspace</code>.
+            </li>
+            <li>
                 Make a new directory called <code>physics_problems</code>. To do this, you need to type
                 <code>mkdir physics_problems</code>.
             </li>
-            <li>Use <code>ls</code> to confirm that you made it. It should be in the list.</li>
-            <li>Go into that directory with <code>cd physics_problems</code>.</li>
-            <li>Use <code>pwd</code> to confirm you are in the <code>physics_problems</code> directory.</li>
-            <li>Use <code>cd ~</code> to go to your home directory. Check <code>pwd</code> to see what it is called.</li>
             <li>
-                Use <code>ls</code> to the things in your home directory. There should be a directory called <code>workspace</code>.
-                Go into that directory by typing <code>cd workspace</code>.
+                Use <code>ls</code> to confirm that you made it. It should be in the list.
             </li>
-            <li>Use <code>pwd</code> and <code>ls</code>. Are you in <code>home/ubuntu/workspace</code>? Is <code>physics_problems</code> still there?</li>
-            <li>Delete the <code>physics_problems</code> directory. You can do this with <code>rmdir physics_problems</code>.</li>
-            <li>Use <code>ls</code> to confirm that it's gone.</li>
-            <li>Use <code>clear</code> so that you have a nice, clear terminal screen.</li>
+            <li>
+                Go into that directory with <code>cd physics_problems</code>.
+            </li>
+            <li>
+                Use <code>pwd</code> to confirm you are in the <code>physics_problems</code> directory.
+            </li>
+            <li>
+                Type <code>ls</code>, which lists everything in the <code>physics_problems</code> directory.
+                But, you won't get any output back, because there isn't anything in there!
+            </li>
+            <li>
+                Go back to the directory you were in before with <code>cd ..</code>.
+                Then, type <code>pwd</code> to confirm you are there.
+                The directory is probably <code>/home/ubuntu/workspace</code>.
+            </li>
+            <li>
+                Type <code>ls</code> again, to confirm taht the <code>physics_problems</code> directory is there.
+            </li>
+            <li>
+                Let's get rid of the <code>physics_problems</code> directory!
+                To do this, type <code>rmdir physics_problems</code>.
+            </li>
+            <li>
+                Confirm that its gone. Type <code>ls</code>, and you should not see the <code>phyiscs_problems</code>
+                directory there.
+                Try typing <code>cd physics_problems</code>, and you should get an error,
+                that says <code>bash: cd: physics_problems: No such file or directory</code>.
+                That's because it isn't there!
+            </li>
         </ol>
         <p>
             If you have any interest at all in any career that involves coding and program,
@@ -212,7 +237,7 @@
         </h4>
         <p>
             We will be coding using a programming language called <strong>Python</strong>.
-            Python is the most commonly used langauge for scientific computing!
+            Python is the one of most commonly used languages for scientific computing!
             Scientific computing just means solving scientific problems by computing, which is what we are going to do.
         </p>
         <p>
@@ -228,7 +253,8 @@
             Before doing anything else, know how to exit the Python Console, so you don't get trapped inside!
             To exit, just type <br>
             <code>exit()</code> <br>
-            Before doing anything else, exit and reenter. That way, you know you're in control of where you are!
+            Before doing anything else, exit and reenter the Python Console multiple times by typing
+            <code>python</code> and <code>exit()</code>. That way, you know you're in control of where you are!
         </p>
         <p>
             Whenver someone is learning a new computer language, the first thing they do is create
@@ -468,6 +494,63 @@
     </li>
     <li>
         <h4>
+            What is a function?
+        </h4>
+        <p>
+            A function in a computer program works just like a function in math class.
+            You put in a certain number of variables (arguments)
+            and you get out some single variable (result).
+        </p>
+        <img src = '../images/functionConceptualDiagram.png' width = '250px' height = 'auto' style = "border: 1px black solid" }>
+    </li>
+    <li>
+        <h4>
+            The Syntax of a Function
+        </h4>
+        <p>
+            When defining a function in Python you need to follow a very specific <strong>syntax</strong>.
+            It looks like this:
+        </p>
+        <img src = '../images/pictureOfPythonFunction.png' width = '400px' height = 'auto' style = "border: 1px black solid">
+        <ul>
+            <li>
+                <code>def</code> statement:
+                Every Python function begins with the statement <code>def</code>.
+            </li>
+            <li>
+                title:
+                This is the title of the function.
+                It should be something short that describes what the function does.
+            </li>
+            <li>
+                arguments:
+                These are all of the inputs into the function.
+                For this function there are four inputs.
+            </li>
+            <li>
+                colon:
+                The first line of the function, after the arguments, must end with a colon.
+            </li>
+            <li>
+                indentation:
+                In Python, the function is shown by the indentation.
+                After the first line, every indented line is a part of the function.
+                The first line that is not indented is not a part of the function.
+            </li>
+            <li>
+                statements:
+                These are all of the lines that are a part of the function and
+                represent how it works.
+            </li>
+            <li>
+                <code>return</code> statement:
+                The return statement ends the function.
+                The function outputs the value that comes after the return statement.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4>
             Physics Function Challenges
         </h4>
         <p class = 'directions'>
@@ -483,13 +566,27 @@
                         <code>def findDisplacement(changeInTime, initialVelocity, acceleration):</code>
                     </li>
                 </ul>
+                Now, test that your function works.
+                Below the function in your program, write the following three tests:
+                <ul>
+                    <li>
+                        <code>print(findDisplacement(1,1,1)) ## should return 1.5</code> <!--1 if all integers -->
+                    </li>
+                    <li>
+                        <code>print(findDisplacement(4,10,3)) ## should return 64.0</code><!-- 40 if all integers-->
+                    </li>
+                    <li>
+                        <code>print(findDisplacement(5.67,3.14,2.15)) ## should return 52.3638675</code><!-- 17.8038 if all integers-->
+                    </li>
+                </ul>
+                Try running your program. If it returns these three values, you succeeded!
             </li>
             <li>
                 Using a pen and paper, solve the formula above for acceleration.
                 Then, create the following function:
                 <ul>
                     <li>
-                        <code>def findAcceleration(changeInTime, Displacement, initialVelocity):</code>
+                        <code>def findAcceleration(changeInTime, displacement, initialVelocity):</code>
                     </li>
                 </ul>
             </li>
@@ -516,7 +613,7 @@
         </h4>
     </li>
     <li>
-        <h4>More Information!</h4>
+        <h4>More Resources!</h4>
         <p>If you want more information, here are some places to look:</p>
         <ul>
             <li>
@@ -547,6 +644,15 @@
             <li>
                 If you get an error message and you simply copy it an Google it, you will
                 usually end up at a page that explains what is going on and how to fix it.
+            </li>
+
+            <li>
+                <a href = 'https://www.learnenough.com/command-line-tutorial'>Learn Enough Command Line to be Dangerous</a>
+                This is a book (you need to pay) that reviews many of the most important UNIX commands.
+            </li>
+            <li>
+                <a href = 'https://people.ischool.berkeley.edu/~kevin/unix-tutorial/toc.html'>UNIX Tutorial from Berkely School of Information</a>
+                This is a well written tutorial on UNIX commands from Berkeley.
             </li>
         </ul>
     </li>
