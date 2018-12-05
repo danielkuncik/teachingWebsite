@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <style>
         code {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 14px;
+        }
+
+        p.directions {
+            font-size: 16px;
         }
 
         li {
-            font-size: 20px;
+            font-size: 14px;
         }
     </style>
     <title>Introduction to Physics Coding Problems</title>
 </head>
 <body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Mathjax-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
 <h1>Welcome to Physics Coding!</h1>
 <h3>Why are we coding in physics?</h3>
 <p>
@@ -27,9 +39,13 @@
     Almost all the problems that people would want to sovle today require it.
     For example, we've solved many problems that involve a car moving at a constant acceleration.
     Imagine now you have a rocket ship taking off. Is its acceleration constant? Certainly not.
-    How many different equations and calcualtions do you think you need to explain the motion of a rocket taking off?
+    How many different equations and calculations do you think you need to explain the motion of a rocket taking off?
     Thousands, if not millions or billions! Humans can't do that many equations at once, but what can? A computer!
     That's why real scientists today do so many of their calculations by writing a computer program.
+</p>
+<p>
+    For more information, see <a href = 'https://www.wired.com/2015/08/coding-physics-course/'>here</a>
+    or <a href = 'https://www.wired.com/2014/02/isnt-physics-computer-science/'>here</a>.
 </p>
 
 <h3>
@@ -40,7 +56,7 @@
         Language: Python
     </li>
     <li>
-        IDE: Cloud9
+        IDE: <a href = 'https://c9.io/login'>Cloud9</a>
     </li>
 </ul>
 
@@ -69,6 +85,7 @@
         <h4>
             Get Into Cloud 9
         </h4>
+        <a href = 'https://c9.io/login'>Link to Cloud9</a>
         <ol>
             <li>
                 I should have sent you an email with an invite link. Click that link to get started!
@@ -100,7 +117,7 @@
         <h4>
             Get Familiar with the Cloud 9 Interface
         </h4>
-        <img src = '../../../playground/cloud9_screenshot.png'>
+        <img src = '../../../playground/cloud9_screenshot.png' width = '600px' height = 'auto'>
         <p>
             The three most important parts of the cloud 9 interface for you to understand are the
             terminal, the text editor, and the file system.
@@ -251,12 +268,131 @@
             <li>
                 <code>2 + 2</code>
             </li>
+            <li>
+                <code>4 * 5</code>
+            </li>
+            <li>
+                <code>30 - 80</code>
+            </li>
+            <li>
+                <code>5 + 8 * 6</code>
+            </li>
+            <li>
+                <code>4 / 2</code>
+            </li>
+            <li>
+                <code>5 / 3</code>
+            </li>
+            <li>
+                <code>(4 + 6)/2</code>
+            </li>
+        </ul>
+        <p>Here's some other things you should know:</p>
+        <ul>
+            <li>
+                For an exponent, you need to use two mulitplcation signs <code>**</code>.
+                <ul>
+                    <li>
+                        <code>2**4</code>
+                    </li>
+                    <li>
+                        <code>5**2</code>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                For more advanced mathematical functions, you need to use a Math package.
+                First type <code>import math</code>, then you have a whole new setup of functions to run
+                <ul>
+                    <li>
+                        <code>math.sqrt(9)</code>
+                    </li>
+                    <li>
+                        <code>math.sqrt(144)</code>
+                    </li>
+                    <li>
+                        <code>math.pi</code>
+                    </li>
+                    <li>
+                        <code>math.sin(math.pi / 2)</code>
+                    </li>
+                    <li>
+                        <code>math.tan(math.pi / 4)</code> (That's an interesting result. What might have happend?)
+                    </li>
+                    <li>
+                        <code>math.acos(0.5) / math.pi</code>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+                    You can try these and many more! To see all of the options under <code>math</code>,
+                    try entering <code>dir(math)</code>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    You can also read help pages on pretty much any function,
+                    for example:
+                </p>
+                <ul>
+                    <li>
+                        <code>math.gamma --help</code>
+                    </li>
+                </ul>
+                <p>
+                    brings you to a page explaining how to use the gama function in Python.
+                    To exit this page, click <code>q</code>.
+                </p>
+            </li>
         </ul>
     </li>
     <li>
         <h4>
             Running programs from files
         </h4>
+        <p>
+            Exit the console by typing <code>exit()</code>.
+            The console is great for playing around and trying out new functions,
+            but to make serious programs we need to make them in separate text files and then run them.
+            You'll make your first real program that runs from a file and run it.
+            It'll be another "Hello World!" program.
+        </p>
+        <ol>
+            <li>
+                Create a new file called <code>my_first_program.py</code>. You can do this by right-clicking in the File System.
+                But a better way is to make the file on the command line.
+                Make sure you have exited the Python console and are back onto your UNIX command line.
+                Make sure you are in the correct directory. Then type:
+                <code>touch my_first_program.py</code>
+            </li>
+            <li>
+                Open up your program in the <strong>text editor</strong> by finding it an clicking on it
+                in the <strong>file system</strong>. It should be a blank text file to begin.
+            </li>
+            <li>
+                In the file type <code>print('Hello World!')</code>
+            </li>
+            <li>
+                On your UNIX command line, in the <strong>terminal</strong>, make sure you are in the same directory
+                as your my_first_program.py file.
+                Then, type <code>python my_first_program.py</code>
+            </li>
+            <li>
+                If you see <code>Hello World!</code> (or whatever else you printed)
+                in your terminal, you did it right. Congratulations!
+            </li>
+            <li>
+                Try some other very simple programs, that print very simple sentences
+                or that complete some simple math programs.
+            </li>
+        </ol>
+        <p>How about a joke break?</p>
+        <ul>
+            <li><code>How do you get a computer program to dance?</code></li>
+            <li><code>With an algo-rhythm!</code></li>
+        </ul>
+
     </li>
     <li>
         <h4>
@@ -267,6 +403,30 @@
         <h4>
             Physics Function Challenges
         </h4>
+        <p class = 'directions'>
+            The goal here is to create functions that help us solve simple physics problems.
+            First, look at the most common of kinematic equations (The King):
+            $$ \Delta x = v_i \cdot \Delta t + \frac{1}{2} a \cdot \left( \Delta t \right)^2  $$
+        </p>
+        <ol>
+            <li>
+                Use this formula to create a function that finds displacement. Name your function like this:
+                <ul>
+                    <li>
+                        <code>def findDisplacement(changeInTime, initialVelocity, acceleration):</code>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Using a pen and paper, solve the formula above for acceleration.
+                Then, create the following function:
+                <ul>
+                    <li>
+                        <code>def findAcceleration(changeInTime, Displacement, initialVelocity):</code>
+                    </li>
+                </ul>
+            </li>
+        </ol>
     </li>
     <li>
         <h4>
@@ -287,6 +447,41 @@
         <h4>
             Physics Challenge: Differentiating a Position-Time Curve to Create a Velocity-Time Curve
         </h4>
+    </li>
+    <li>
+        <h4>More Information!</h4>
+        <p>If you want more information, here are some places to look:</p>
+        <ul>
+            <li>
+                <a href = 'https://docs.python.org/3/'>Python Documentation</a>
+                This is the official place to look up any information about Python functions and methods.
+            </li>
+            <li>
+                <a href = 'https://docs.python.org/3/tutorial/'>The official Python Tutorial</a>
+                Written by the actual Python software foundation that makes Python, it goes through all the most
+                important methods and functions pedagogically.
+            </li>
+            <li>
+                <a href = 'https://www.codecademy.com/learn/learn-python'>Python Tutorial on Code Academy</a>
+                Gives a sequence of simple tasks to help you learn Python.
+            </li>
+            <li>
+                <a href = 'https://learnpythonthehardway.org'>Learn Python the Hard Way</a>.
+                You need to pay for this online book, but it is another great option for how
+                to learn Python.
+            </li>
+            <li>
+                If you just Google "Python Tutorial," you'll find tons of other options as well.
+            </li>
+            <li>
+                If you Google any specific question, for example, "How do I write functions in Python?"
+                an answer should pop up right away.
+            </li>
+            <li>
+                If you get an error message and you simply copy it an Google it, you will
+                usually end up at a page that explains what is going on and how to fix it.
+            </li>
+        </ul>
     </li>
 </ol>
 
