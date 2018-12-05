@@ -117,7 +117,7 @@
         <h4>
             Get Familiar with the Cloud 9 Interface
         </h4>
-        <img src = '../../../playground/cloud9_screenshot.png' width = '600px' height = 'auto'>
+        <img src = 'cloud9_screenshot.png' width = '600px' height = 'auto'>
         <p>
             The three most important parts of the cloud 9 interface for you to understand are the
             terminal, the text editor, and the file system.
@@ -184,16 +184,22 @@
             See if you can use these commands to do the following!
         </p>
         <ol>
-            <li>Make a new directory called "physics_problems."</li>
-            <li>Use "ls" to confirm that you made it. It should be in the list.</li>
-            <li>Go into that directory.</li>
-            <li>Use pwd to confirm you are in the physics_problems directory.</li>
-            <li>use "cd .." to go back.</li>
-            <li>Keep using "cd .." to go back farther into the root directory. Every time you use it, use "pwd" and "ls" to see what's going on!</li>
-            <li>Return to your home directory.</li>
-            <li>Delete the "phyiscs_problems" directory.</li>
-            <li>Use "ls" to confirm that it's gone.</li>
-            <li>Use "clear" so that you have a nice, clear terminal screen.</li>
+            <li>
+                Make a new directory called <code>physics_problems</code>. To do this, you need to type
+                <code>mkdir physics_problems</code>.
+            </li>
+            <li>Use <code>ls</code> to confirm that you made it. It should be in the list.</li>
+            <li>Go into that directory with <code>cd physics_problems</code>.</li>
+            <li>Use <code>pwd</code> to confirm you are in the <code>physics_problems</code> directory.</li>
+            <li>Use <code>cd ~</code> to go to your home directory. Check <code>pwd</code> to see what it is called.</li>
+            <li>
+                Use <code>ls</code> to the things in your home directory. There should be a directory called <code>workspace</code>.
+                Go into that directory by typing <code>cd workspace</code>.
+            </li>
+            <li>Use <code>pwd</code> and <code>ls</code>. Are you in <code>home/ubuntu/workspace</code>? Is <code>physics_problems</code> still there?</li>
+            <li>Delete the <code>physics_problems</code> directory. You can do this with <code>rmdir physics_problems</code>.</li>
+            <li>Use <code>ls</code> to confirm that it's gone.</li>
+            <li>Use <code>clear</code> so that you have a nice, clear terminal screen.</li>
         </ol>
         <p>
             If you have any interest at all in any career that involves coding and program,
@@ -375,6 +381,7 @@
             </li>
             <li>
                 In the file type <code>print('Hello World!')</code>
+                Make sure you save the file by cliking File => Save.
             </li>
             <li>
                 On your UNIX command line, in the <strong>terminal</strong>, make sure you are in the same directory
@@ -387,7 +394,7 @@
             </li>
             <li>
                 Try some other very simple programs, that print very simple sentences
-                or that complete some simple math programs.
+                or that complete some simple arithmetic.
             </li>
         </ol>
         <p>How about a joke break?</p>
@@ -401,6 +408,63 @@
         <h4>
             Defining Functions
         </h4>
+        <p>
+            When programming, we will almost always create functions that accomplish
+            the physics goals we have. First, we need to learn how to write and define functions.
+        </p>
+        <ol>
+            <li>
+                Create a new file called <code>my_first_functions.py</code>.
+                To do so, make sure you are in the <code>/home/ubuntu/workspace</code>
+                directory, and then type <code>touch my_first_functions.py</code>.
+            </li>
+            <li>
+                Open <code>my_first_functions.py</code> in your <strong>file system</strong>.
+                Then, in the <strong>text editor</strong>, write the following:
+                <p>
+                    <code>
+                        def sum(a,b): <br>
+                             &nbsp &nbsp &nbsp return a + b <br>
+                        <br>
+                        x = sum(2,2)<br>
+                        print(x)<br>
+                    </code>
+                </p>
+            </li>
+            <li>
+                In your <strong>terminal</strong>, run the file by typing
+                <code>python my_first_functions.py</code>.
+                What does it print out? Is this logical?
+            </li>
+            <li>
+                Try adding a new function to your program called <code>difference</code>:
+                <p>
+                    <code>
+                        def sum(a,b): <br>
+                        &nbsp &nbsp &nbsp return a + b <br>
+                        <br>
+                        x = sum(2,2)<br>
+                        print(x)<br>
+                        <br>
+                        def difference(c,d): <br>
+                        &nbsp &nbsp &nbsp return c - d <br>
+                        <br>
+                        y = difference(5,3)<br>
+                        print(y)
+                    </code>
+                </p>
+                Run this program in the <strong>terminal</strong> with <code>python my_first_program.py</code>.
+                What does it return?
+            </li>
+            <li>
+                See if you can create an test a new functions of your own!
+                Call it <code>product</code> and have it return the product of two numbers.
+            </li>
+            <li>
+                Now, try to make a function called <code>sqaure_root</code> that returns the square root of a number.
+                For this program, you will need to add <code>import math</code> as the first line of your program.
+            </li>
+        </ol>
     </li>
     <li>
         <h4>
