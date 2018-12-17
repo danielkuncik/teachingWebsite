@@ -18,6 +18,9 @@
         li {
             font-size: 14px;
         }
+        td {
+            border: 1px solid black;
+        }
     </style>
     <title>Physics Coding 2</title>
 </head>
@@ -91,7 +94,7 @@
         </ul>
     </li>
     <li>
-        <h4>Lists</h4>
+        <h4>Introduction to Lists</h4>
         <p>
             To learn about lists and arrays, we are going to use the <strong>Python Console</strong>.
             Open up the <strong>Python Console</strong> by entering the command <code>python</code> in UNIX.
@@ -110,41 +113,442 @@
             </li>
         </ol>
 
-        <p>Then, reading your list piece by piece</p>
+        <p>Small List Challenge:</p>
+        <ol>
+            <li>
+                Make a list of all the numbers from 1 to 10.
+            </li>
+            <li>
+                Use <code>print</code> to confirm that you made it!
+            </li>
+        </ol>
 
+        <p>
+            Length of Lists:
+            Use the function <code>len()</code> in order to see how many elements a list has!
+        </p>
+        <ol>
+            <li>
+                <code>
+                    myList = [1,2,3,4,5,6,7,8]
+                </code>
+            </li>
+            <li>
+                <code>
+                    len(myList) # this should return the number 8!
+                </code>
+            </li>
+            <li>
+                See if you can make a list with a length of 9, then use <code>len()</code>
+                to confirm that you did it!
+            </li>
+        </ol>
 
-        <p>After that, 'et's try changing parts of your list:</p>
+        <p>
+            Reading your list in pieces:
+            You can read individual elements of a list with this syntax
+            <code>
+                list[index]
+            </code>
+            The <code>index</code> variable starts at zero!
+            Try following the steps to practice this!
+        </p>
+        <ol>
+            <li>
+                <code>
+                    myList = [2,4,6,8,10]
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList[0])
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList[1])
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList[3])
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList[10])
+                </code>
+                Huh? This one doesn't work! Why?
+            </li>
+        </ol>
 
+        <p>
+            Small list challenge:
+        </p>
+        <ol>
+            <li>
+                Make a list up to 30 of all numbers, counting by 3s.
+            </li>
+            <li>
+                Use <code>len</code> to confirm the list has three elements.
+            </li>
+            <li>
+                Check what element <code>0</code> is.
+            </li>
+            <li>
+                Check what element <code>3</code> is.
+            </li>
+            <li>
+                The sixth item in your list should be 18.
+                But if I type <code>myList[6]</code>, I get 21, not 18!
+                What do I need to type to get the 6th element, 18? Why?
+            </li>
+        </ol>
 
-        <p>Then, let's try adding elements to your list...</p>
+        <p>
+            Changing Parts of Your List.
+            You can change each individual element of a list with indexes,
+            similar to how you read each element of a list.
+        </p>
 
+        <ol>
+            <li>
+                <code>
+                    myList = [1,2,3,4,5,6]
+                </code>
+            </li>
+            <li>
+                <code>
+                    print
+                </code>
+            </li>
+            <li>
+                <code>
+                    myList[0] = 0
+                </code>
+            </li>
+            <li>
+                <code>
+                    myList[1] = 0
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList)
+                </code>
+                What happened, what changed?
+            </li>
+        </ol>
+
+        <p>
+            Small List Challenge:
+        </p>
+        <ol>
+            <li>
+                Make a list of all the numbers from 1 to 10, counting by 2s.
+            </li>
+            <li>
+                Change the first three numbers to zero.
+            </li>
+            <li>
+                Confirm that you did it!
+                If you did it right, you should have
+                <code>
+                    >>> print(myList)
+                    <br>
+                    [0,0,0,4,5,6,7,8,9,10]
+                </code>
+            </li>
+        </ol>
+
+        <p>
+            You can also add new elements to your list with <code>append</code>.
+            Try entering the following code:
+        </p>
+        <ol>
+            <li>
+                <code>
+                    myList = [1,2,3,4]
+                </code>
+            </li>
+            <li>
+                <code>
+                    myList.append(5)
+                </code>
+            </li>
+            <li>
+                <code>
+                    myList.append(6)
+                </code>
+            </li>
+            <li>
+                <code>
+                    myList.append(7)
+                </code>
+            </li>
+            <li>
+                <code>
+                    print(myList)
+                </code>
+            </li>
+        </ol>
+
+        <p>
+            Another List Challenge:
+        </p>
+        <ol>
+            <li>
+                <code>
+                    Make a list of numbers from zero to ten.
+                </code>
+            </li>
+            <li>
+                <code>
+                    Add 11, 12, and 13 to your list by using <code>append</code>
+                </code>
+            </li>
+            <li>
+                Confirm you did it with:
+                <code>
+                    >>> print(myList)
+                    <br>
+                    [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+                </code>
+            </li>
+        </ol>
 
 
         <p>List challenge!!!</p>
 
     </li>
     <li>
-        <h4>Arrays (Easy to Use Lists!)</h4>
-    </li>
-    <li>
         <!--- What about arrays....do they need to know abotu arrays????---->
         <h4>Graphing</h4>
+        <p>
+            For scientific computing, we need to make graphs.
+            We are going to use a graphing program called <strong>matplotlib</strong>.
+            First, we <i>would</i> need to install matplotlib, but fortunately that's already done for us
+            by the Cloud9 platform.
+            Make sure you are in the <strong>Python Console</strong> (not the UNIX operating system).
+            The line should begin with three carats <code> >>> </code>
+            And, then type <code>import matplotlib</code>.
+        </p>
+
+        <p>
+            Making a very simple plot, you need to enter commands in <i>precisely this order!</i>
+        </p>
+
+        <ol>
+            <li>
+                <code>
+                    import matplotlib
+                </code>
+            </li>
+            <li>
+                <code>
+                    matplotlib.use('Agg')
+                </code>
+            </li>
+            <li>
+                <code>
+                    import matplotlib.pyplot as plt
+                </code>
+                A couple warnings show up, don't worry about them.
+            </li>
+            <li>
+                <code>
+                    a = [0,1,2,3]
+                </code>
+            </li>
+            <li>
+                <code>
+                    b = [0,2,4,6]
+                </code>
+            </li>
+            <li>
+                <code>
+                    plt.plot(a,b)
+                </code>
+                A message comes up saying you have a <i>lines.lines2D object</i>.
+            </li>
+            <li>
+                <code>
+                    plt.savefig('myFirstPlot.png')
+                </code>
+            </li>
+            <li>
+                Now, the file <code>myFirstPlot.png</code> should appear in your
+                <strong>File System</strong>. Click on it to see your plot!
+            </li>
+        </ol>
+
+        <p>
+            If every time you enter and exit the <strong>Python Console</strong>,
+            then you must retype the first three commands!
+            But, if you don't exit the console, you don't need to worry about them!
+        </p>
+
+        <p>
+            Try making a new list:
+        </p>
+        <ol>
+            <li>
+                <code>
+                    c = [0,1,2,3,4,5]
+                </code>
+            </li>
+            <li>
+                <code>
+                    d = [0,1,4,9,16,25]
+                </code>
+            </li>
+            <li>
+                <code>
+                    plt.plot(c,d)
+                </code>
+            </li>
+            <li>
+                <code>
+                    plt.savefig('mySecondPlot.png')
+                </code>
+            </li>
+        </ol>
+
+        <p>
+            Now, try making your own plot!
+            Try creating a plot of this data:
+        </p>
+        <table>
+            <tr>
+                <th>
+                    X
+                </th>
+                <th>
+                    Y
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    0
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.1736
+                </td>
+                <td>
+                    10
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.342
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.5
+                </td>
+                <td>
+                    30
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.6428
+                </td>
+                <td>
+                    40
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.766
+                </td>
+                <td>
+                    50
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.866
+                </td>
+                <td>
+                    60
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.9497
+                </td>
+                <td>
+                    70
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    0.985
+                </td>
+                <td>
+                    80
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1.0
+                </td>
+                <td>
+                    90
+                </td>
+            </tr>
+        </table>
+
     </li>
     <li>
-        <h4>More about lists</h4>
-        <!--- zeroes, range, and some other list functions!!!--->
+        <h4>The Range Function</h4>
+        <p>
+            The <code>range()</code> function on Python will help us make lists we can use to graph functions!
+        </p>
+        <code>
+            range(start, stop)
+        </code>
+        Range only takes integer values.
+
     </li>
     <li>
-        <h4>Creating a Function and Graphing it</h4>
+        <h4>
+            Graphing a Simple Function With a For Loop
+        </h4>
     </li>
     <li>
-        <h4>Reading Files</h4>
-    </li>
-    <li>
-        <h4>Reading Data from a File and Graphing It</h4>
+        <h4>
+            Creating a Position-Time Graph with a Kinematic Equation
+        </h4>
     </li>
 </ol>
 
+
+<h3>
+    Extra Resources
+</h3>
+<ul>
+    <li>
+        <a href = 'https://matplotlib.org'>
+            MatPLotLib Official Site and Documentation
+        </a>
+    </li>
+    <li>
+        <a href = 'https://www.youtube.com/watch?annotation_id=annotation_2821107469&feature=iv&index=1&list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF&src_vid=wAwQ-noyB98&v=q7Bo_J8x_dw'>
+            YouTube Matplotlib Tutorial
+        </a>
+    </li>
+</ul>
 
 
 </body>
