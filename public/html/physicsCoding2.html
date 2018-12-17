@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <style>
         code {
-            font-size: 20px;
+            font-size: 16px;
         }
 
         p {
@@ -64,7 +64,8 @@
                 <code>date</code>: What does this do?
             </li>
             <li>
-                <code>whoami</code>: What does this do?
+                <code>whoami</code>: This is supposed to tell you your username.
+                In the Cloud9 system, it just returns <strong>Ubuntu</strong>
             </li>
         </ul>
         <p>Some things you need to be able to do:</p>
@@ -80,7 +81,7 @@
             </li>
         </ul>
         <p>
-            Finally, we need to work on openning and closing the <strong>Python Console</strong>.
+            Finally, we need to work on opening and closing the <strong>Python Console</strong>.
             You know that you are hte the unix operating system when the command line ends with a
             dollar sign <code>$</code>.
             You are in the <strong>Python Console</strong> when the command line is <code> >>> </code>
@@ -322,7 +323,6 @@
 
     </li>
     <li>
-        <!--- What about arrays....do they need to know abotu arrays????---->
         <h4>Graphing</h4>
         <p>
             For scientific computing, we need to make graphs.
@@ -508,7 +508,6 @@
                 </td>
             </tr>
         </table>
-
     </li>
     <li>
         <h4>The Range Function</h4>
@@ -518,13 +517,123 @@
         <code>
             range(start, stop)
         </code>
+        <p>
         Range only takes integer values.
-
+        See what you get when you type the following code:
+        </p>
+        <ul>
+            <li>
+                <code>
+                    range(0,12)
+                </code>
+            </li>
+            <li>
+                <code>
+                    range(20,30)
+                </code>
+            </li>
+            <li>
+                <code>
+                    range(-10,10)
+                </code>
+            </li>
+            <li>
+                <code>
+                    range(12)
+                </code>
+            </li>
+            <li>
+                <code>
+                    range(6)
+                </code>
+            </li>
+        </ul>
+        <p>
+            The <code>range()</code> function is mostly pretty intuitive, but there is one funny thing about it:
+            <code>range(0,12)</code> only returns numbers from 0 to 11, and doesn't include 12!
+        </p>
     </li>
     <li>
         <h4>
-            Graphing a Simple Function With a For Loop
+            Making a (not very interesting) Graph in a File
         </h4>
+        <p>
+            In order to make graphs for more complex situations,
+            we need to run multiple commands, which is far simpler if we use a <strong>Python File</strong>,
+            rather than just typing commands in the <strong>Python Console</strong>.
+        </p>
+        <p>
+            Make sure you are in the <strong>Ubuntu</strong> operating system.
+            If you are, the line on your terminal should end with a dollar sign <code>$</code>.
+        </p>
+        <code>
+            touch making_a_graph.py
+        </code>
+        <p>
+            This creates a new Python file called <code>making_a_graph.py</code>.
+            Open it up in your <strong>File System</strong>.
+        </p>
+        <p>
+            In the graph, you need to type some code that will create multiple lists
+            and then create functions based upon them.
+            Type this into your file:
+        </p>
+        <code>
+            x = range(101) <br>
+            y = [5]*101 <br>
+            print(x,y)
+        </code>
+        <p>
+            Then, try running your code in the <strong>UNIX terminal</strong>
+            by typing <code>python making_a_graph.py</code>.
+            It should give you two lists. The first one (x),
+            is a list of numbers from 0 to 100.
+            The second one, y is a list of 101 fives.
+            Delete the <code>print(x,y)</code> statement from your code,
+            because you don't really need it.
+        </p>
+        <p>
+            Let's try graphing these lists
+            Although the result won't be very interesting, it will be good practice!
+            At the <i>top</i> of your program, you need to type
+        </p>
+        <code>
+            import matplotlib <br>
+            matplotlib.use('Agg') <br>
+            import matplotlib.pyplot as plt
+        </code>
+        <p>
+            Then, at the <i>bottom</i> of your program, you need to type:
+        </p>
+        <code>
+            plt.plot(x,y) <br>
+            plt.savefig('myGraph.py)
+        </code>
+        <p>
+            Next, try running a program the program in your <strong>terminal</strong>
+            by typing <code>python making_a_graph.py</code> into your terminal.
+            If you did this correctly, the file <strong>myGraph.py</strong> will appear in
+            your <strong>File System</strong>! If you open it, you'll see a graph
+            from x = 0 to x = 100 that is always five.
+        </p>
+        <p>
+            <strong>Challenge:</strong>
+            Change this code to make a graph that is also 30 (or any number you like!).
+            If you change the code and rerun it, then the <code>myGraph.png</code> file
+            will update and you can reload it to see the newer graph.
+        </p>
+    </li>
+    <li>
+        <h4>
+            Using a For-Loop to Graph a Function
+        </h4>
+        <p>
+            We probably want to graph functions that are more interesting than just the number 5.
+            In order to graph an actual function, we will need slightly more code.
+            The most traditional, standard way to graph a function is with a <code>for-loop</code>.
+            Later, we will learn a simpler and more up to date method called an <code>array</code>,
+            but for now we are learning the more traditional method.
+        </p>
     </li>
     <li>
         <h4>

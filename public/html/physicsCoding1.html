@@ -567,26 +567,55 @@
                     </li>
                 </ul>
                 Now, test that your function works.
-                Below the function in your program, write the following three tests:
+                Below the function in your program, write the following four tests:
                 <ul>
+                    <li>
+                        <code>print(findDisplacement(5.67,3.14,2.15)) ## should return 52.3638675</code><!-- 17.8038 if all integers-->
+                    </li>
+                    <li>
+                        <code>print(findDisplacement(6.43, 0, 9.81) ## should return 202.7967345</code>
+                    </li>
                     <li>
                         <code>print(findDisplacement(1,1,1)) ## should return 1.5</code> <!--1 if all integers -->
                     </li>
                     <li>
                         <code>print(findDisplacement(4,10,3)) ## should return 64.0</code><!-- 40 if all integers-->
                     </li>
-                    <li>
-                        <code>print(findDisplacement(5.67,3.14,2.15)) ## should return 52.3638675</code><!-- 17.8038 if all integers-->
-                    </li>
                 </ul>
-                Try running your program. If it returns these three values, you succeeded!
+                <p>
+                    Try running your program. If it returns these three values, you succeeded!
+                    (Note: You may run into some problems if you represented the one-half with 1/2, instead of 0.5
+                    If this happened, change it into a 0.5, and then try again. This problem has to do with
+                    concepts called <strong>integers</strong> and <strong>floats</strong>.)
+                </p>
+
             </li>
             <li>
-                Using a pen and paper, solve the formula above for acceleration.
+                Using a pen and paper, solve the formula above for acceleration algebraically.
                 Then, create the following function:
                 <ul>
                     <li>
                         <code>def findAcceleration(changeInTime, displacement, initialVelocity):</code>
+                    </li>
+                </ul>
+                <p>
+                    Test your code with by putting the following commands in your file and seeing how they work:
+                </p>
+                <ul>
+                    <li>
+                        <code>
+                            print(findAcceleration(2.34,5.43,6.87)) ## should return -3.88845058076
+                        </code>
+                    </li>
+                    <li>
+                        <code>
+                            print(findAcceleration(4.039, 80.0, 0)) ## should return 9.80781524724
+                        </code>
+                    </li>
+                    <li>
+                        <code>
+                            print(findAcceleration(1.0,1.0,1.0)) ## should return 0
+                        </code>
                     </li>
                 </ul>
             </li>
