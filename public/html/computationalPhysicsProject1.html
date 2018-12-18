@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computational Physics Project 1</title>
+</head>
+<body>
+
+<h1>Kinematics Project: Automatic Kinematic Graphs</h1>
+
+<h3>Requirements:</h3>
+
+<p>
+    Create a <code>class</code> entitled <code>kinematicsSituation</code>.
+    The <code>kinematicsSituation</code> class should have three initial variables:
+    <code>initialPosition</code>, <code>initialVelocity</code>, and <code>acceleration</code>.
+    These three variables represent the three constant values within any one dimensional kinematics situation.
+    The variables <code>initialPosition</code> and <code>initialVelocity</code> initial variables
+    are numbers representing the position
+    and velocity of the object at time = 0.
+    The <code>acceleration</code> initial variable
+    is a number that represents the acceleration, which is constant in the
+    kinematics situation we are considering.
+</p>
+
+<p>
+    The <code>kinematicsSituation</code> class should have three methods,
+    <code>drawPositionTimeGraph</code>,
+    <code>drawVelocityTimeGraph</code>,
+    and <code>drawAccelerationTimeGraph</code>.
+    These three methods should each draw a the selected kinematic graph
+    and output it onto a <code>.png</code> file.
+    Each method should take three arguments <code>timeMin</code>, <code>timeMax</code>, and <code>filename</code>.
+    The arguments <code>timeMin</code> and <code>timeMax</code> are numbers representing the range of time that
+    will be drawn in the position, velocity, and acceleration graphs.
+    The <code>filename</code> argument is a string that gives the name of the file onto which the graph will be outputted.
+    The output graphs must be well drawn and contain the correct labels on x-axis and y-axis.
+</p>
+
+<p>
+    Note that this problem deals with only one-dimensional situations with a constant acceleration.
+    (Extensions into multi-dimensional or stepwise acceleration will be included in future projects.)
+</p>
+
+<h3>Applications of the Project:</h3>
+
+<p>
+    Use the Python Class you have created to create kinematic graphs representing common situations.
+</p>
+
+<ul>
+    <li>
+        A car accelerates at a rate of 3 m/s<sup>2</sup> from rest for a time of 5 seconds.
+        Draw position, velocity, and acceleration graphs for the car.
+    </li>
+    <li>
+        You drop a rock off of a roof from rest and it strikes the ground 2 seconds later.
+        Create position, velocity, and acceleration graphs for the rock.
+        [The initial height of the rock is 19.6 meters.]
+    </li>
+    <li>
+        A car moves at a constant velocity of 18 m/s for a time of 8 seconds.
+        Create position, velocity, and acceleration graphs for the car.
+    </li>
+    <li>
+        A person sits at the origin and does nothing for 10 seconds.
+        Create position, velocity, and acceleration graphs for the person.
+    </li>
+    <li>
+        A car beginning from a position 50 m to the LEFT of the origin
+        approaches with a speed of 15 m/s.
+        It comes to rest at the origin 5 seconds later.
+        Create position, velocity, and acceleration graphs for the person.
+    </li>
+</ul>
+
+<p>
+    Note that the goal is only to create a class which meets the requirements above,
+    and it is okay to test each of these applications from within your code.
+    You do not need to create an API (application program interface) to go with the Python class you created.
+    (If you are interested in web design, that might be a good side project,
+    but for a physics class we are going to focus primarily on solving the problems.)
+</p>
+
+</body>
+</html>
