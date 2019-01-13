@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Friction</title>
+    <link rel = 'stylesheet' href = '../quiz_stylesheet.css' />
+    <!--type = 'text/css' -->
+    <style>
+
+        p {
+            font-size: 12px;
+            font-family: "Times New Roman";
+        }
+
+        li {
+            font-size: 12px;
+            font-family: "Times New Roman";
+        }
+
+
+        div.section {
+
+        }
+
+        h3.sectionTitle {
+            font-size: 16px;
+        }
+
+        table.defintionBox {
+
+        }
+
+        h5.wordForDefinition {
+
+        }
+
+        td, th {
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            font-size: 12px;
+            font-family: "Times New Roman";
+        }
+
+        th {
+            vertical-align: text-top;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        tr.bigRow {
+            height: 100px
+        }
+
+        tr.smallRow {
+            height: 30px
+        }
+
+        li.subQuestion {
+            margin-bottom: 80px;
+        }
+
+        div.pageBreak {
+            page-break-after: always;
+        }
+
+    </style>
+</head>
+<body>'
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Mathjax-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<h2>Static Friction</h2>
+<div class = 'section'>
+    <h3 class = 'sectionTitle'></h3>
+    <h5 class = 'wordForDefinition'>Static Friction Rules</h5>
+
+    <p>
+        Whenever a block is sliding on the table,
+        it experiences the force of <strong>kinetic</strong> friction.
+        Whenever the block is not moving on the table,
+        but there is a force attempting to push it,
+        it experiences the force of <strong>static</strong> friction.
+    </p>
+    <p>
+        Static friction is more complicated than kinetic friction.
+        While kinetic friction always has the same value,
+        static friction adjusts to the situation.
+    </p>
+
+    <h5 class = 'wordForDefinition'>Static Friction Formulas</h5>
+
+    <p>
+        The formula for static friction is more complex than other physics formulas.
+        It does not simply involve plugging in, but requires reasoning based upon the situation.
+        This type of force is called a <strong>constraint force</strong>.
+
+        $$
+        F_{fr} \leq \mu_s \cdot F_N
+        $$
+        or
+        $$
+        F_{fr}(MAX) = \mu_s \cdot F_N
+        $$
+    </p>
+
+    <p>
+        How the magnitude of static friction is determined (in cases with only one applied force):
+    </p>
+    <ul>
+        <li>
+            If the applied force is less than the maximum static friciton,
+            the magnitude of static friction EQUALS the magnitude of the applied force.
+        </li>
+        <li>
+            If the applied force is greater than the maximum value of static friciton,
+            the object begins to move, and the static friction is replaced by kinetic friction.
+            (The magnitude of kinetic friction is always weaker than the maximum static friction).
+        </li>
+    </ul>
+
+    <h5 class = 'wordForDefinition'>More Static Friction Facts</h5>
+
+    <ul>
+        <li>
+            The direction of static friction is always resisting the force
+            that is attempting to move the object.
+        </li>
+        <li>
+            The coefficient of static friction is always <i>greater</i>
+            than the coefficient of kinetic friction.
+            This is why it takes more force to begin pushing a box
+            than to keep it moving.
+        </li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>
+                Symbol
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                SI Unit
+            </th>
+        </tr>
+        <tr>
+            <td>
+                \( F_{fr} \)
+            </td>
+            <td>
+                Magnitude of the force of friction
+            </td>
+            <td>
+                Newtons
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \( \mu_S \(
+            </td>
+            <td>
+                Coefficient of Static Friction
+            </td>
+            <td>
+                Unitless
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \( F_N \)
+            </td>
+            <td>
+                Magnitude of normal force
+            </td>
+            <td>
+                Newtons
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div class = 'pageBreak'></div>
+
+<div class = 'section' id = 'staticFrictionProblem1'>
+    <h4>Situation 1</h4>
+    <p>
+        A box is stationary on a floor with friction.
+        <br>
+        The mass of the block is 2.00 kg.
+        <br>
+        An applied force of 5.00 Newtons is pushing the block to the right.
+        <br>
+        The coefficient of static friction is 0.800 and the coefficient
+        of kinetic friction is 0.400.
+    </p>
+
+    <ol type = 'A'>
+        <li class = 'subQuestion'>
+            Determine the magnitude of gravity and of the normal force.
+        </li>
+        <li class = 'subQuestion'>
+            Determine the maximum magnitude of static friction with the formula
+            \( F_{fr}(MAX) = \mu_S \cdot F_N \).
+        </li>
+        <li class = 'subQuestion'>
+            A block moves if the applied force exceeds the maximum magnitude of static friction.
+            Does this block move?
+        </li>
+        <li class = 'subQuestion'>
+            What type of friction do you have, and what is the magnitude of the force of friction?
+            <ul>
+                <li>
+                    If the box is moving, then you have <strong>kinetic</strong> friction and
+                    the magnitude of friction is give by
+                    \( F_{fr} = \mu_K \cdot F_N \)
+                </li>
+                <li>
+                    If the box is not moving, then you ahve <strong>static</strong> friction.
+                    The net force is zero,
+                    and thus the friction must equal the magnitude of the applied force.
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>
+        Using the information from the questions above,
+        draw a free-body diagram for the block and fill out the table below.
+    </p>
+
+    <table>
+        <tr class = 'bigRow'>
+            <th colspan = '4'>
+                Free-Body Diagram
+            </th>
+        </tr>
+        <tr class = 'smallRow'>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Force
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Magnitude
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Direction
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                How do you determine the magnitude?
+            </th>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <p style = 'margin-top: 20px;'>
+        If the block is moving, then determine the acceleration of the block.
+        Otherwise, simply write \( a = 0 \).
+    </p>
+</div>
+
+<div class = 'pageBreak'></div>
+
+
+<div class = 'section'>
+    <h4>Situation 2</h4>
+    <p>
+        A box is stationary on a floor with friction.
+        <br>
+        The mass of the block is 6.00 kg.
+        <br>
+        An applied force of 35.0 Newtons is pushing the block to the right.
+        <br>
+        The coefficient of static friction is 0.500 and the coefficient
+        of kinetic friction is 0.200.
+    </p>
+
+    <ol type = 'A'>
+        <li class = 'subQuestion'>
+            Determine the magnitude of gravity and of the normal force.
+        </li>
+        <li class = 'subQuestion'>
+            Determine the maximum magnitude of static friction with the formula
+            \( F_{fr}(MAX) = \mu_S \cdot F_N \).
+        </li>
+        <li class = 'subQuestion'>
+            A block moves if the applied force exceeds the maximum magnitude of static friction.
+            Does this block move?
+        </li>
+        <li class = 'subQuestion'>
+            What type of friction do you have, and what is the magnitude of the force of friction?
+            <ul>
+                <li>
+                    If the box is moving, then you have <strong>kinetic</strong> friction and
+                    the magnitude of friction is give by
+                    \( F_{fr} = \mu_K \cdot F_N \)
+                </li>
+                <li>
+                    If the box is not moving, then you ahve <strong>static</strong> friction.
+                    The net force is zero,
+                    and thus the friction must equal the magnitude of the applied force.
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>
+        Using the information from the questions above,
+        draw a free-body diagram for the block and fill out the table below.
+    </p>
+
+    <table>
+        <tr class = 'bigRow'>
+            <th colspan = '4'>
+                Free-Body Diagram
+            </th>
+        </tr>
+        <tr class = 'smallRow'>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Force
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Magnitude
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                Direction
+            </th>
+            <th style = 'padding-right: 10px; padding-left: 10px'>
+                How do you determine the magnitude?
+            </th>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <p style = 'margin-top: 20px;'>
+        If the block is moving, then determine the magnitude of acceleration of the block.
+        Otherwise, simply write \( a = 0 \).
+    </p>
+
+</div>
+
+<div class = 'pageBreak'></div>
+
+<div class = 'section'>
+    <h5>Situation 3</h5>
+    <p>
+        A person is pushing a box with a mass of 5.00 kg.
+        Between the box and the floor,
+        the coefficient of static friction is 0.4,
+        and the coefficient of kinetic friction is 0.2.
+    </p>
+    <ol type = 'A'>
+        <li class = 'subQuestion'>
+            Determine the magnitude of gravity and the normal force.
+        </li>
+        <li class = 'subQuestion'>
+            Determine the maximum value of static friction.
+        </li>
+    </ol>
+
+    <p>
+        The pusher slowly increases the force she is applying to the box.
+        For each force she pushes, answer the questions provided in the table.
+    </p>
+
+    <table>
+        <tr class = 'smallRow'>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Force
+            </td>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Will the box begin to move?
+            </td>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Static for kinetic friction?
+            </td>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Magnitude of frictional force
+            </td>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Net Force
+            </td>
+            <td style = 'padding-right: 10px; padding-left: 10px'>
+                Acceleration
+            </td>
+        </tr>
+        <tr>
+            <td>5.00 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>10.0 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>18.0 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>20.0 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>25.0 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>30.0 N</td> <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+</div>
+
+<div class = 'pageBreak'></div>
+
+
+<div class = 'answers'>
+
+    <div>
+        <h4>Situation 1: Answers</h4>
+        <ol type = 'A'>
+            <li>
+                The magnitude of gravity and the normal force are both 19.6 N.
+            </li>
+            <li>
+                The maximum magnitude of static friction is 15.68 N
+            </li>
+            <li>
+                The block does not move.
+            </li>
+            <li>
+                We have static friction,
+                and it is equal in magnitude to the applied force of 19.6 N
+            </li>
+        </ol>
+
+        <table>
+            <tr class = 'bigRow'>
+                <th colspan = '4'>
+                    Free-Body Diagram
+                </th>
+            </tr>
+            <tr class = 'smallRow'>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Force
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Magnitude
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Direction
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    How do you determine the magnitude?
+                </th>
+            </tr>
+            <tr>
+                <td>Gravity</td><td>19.6 N</td><td>Down</td><td>\( F_g = mg = 2.00 \cdot 9.8 \)</td>
+            </tr>
+            <tr>
+                <td>Normal Force</td><td>19.6 N</td><td>Up</td><td>Must be equal to magnitude of gravity for no vertical motion.</td>
+            </tr>
+            <tr>
+                <td>Applied Force</td><td>5.00 N</td><td>Right</td><td>Given</td>
+            </tr>
+            <tr>
+                <td>Static Friction</td><td>5.00 N</td><td>Left</td><td>Must be equal to magnitude of applied force for no motion.</td>
+            </tr>
+        </table>
+        <p style = 'magin-top: 20px'>\( a = 0 \)</p>
+    </div>
+
+    <div class = 'pageBreak'></div>
+
+    <div>
+        <h4>Situation 2: Answers</h4>
+        <ol type = 'A'>
+            <li>
+                The magnitude of gravity and the normal force are both 58.8 N.
+            </li>
+            <li>
+                The maximum magnitude of static friction is 29.4 N
+            </li>
+            <li>
+                The block does begin to move.
+            </li>
+            <li>
+                We have kinetic friction,
+                and the magnitude of kinetic friction is equal to 11.76
+            </li>
+        </ol>
+
+        <table>
+            <tr class = 'bigRow'>
+                <th colspan = '4'>
+                    Free-Body Diagram
+                </th>
+            </tr>
+            <tr class = 'smallRow'>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Force
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Magnitude
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    Direction
+                </th>
+                <th style = 'padding-right: 10px; padding-left: 10px'>
+                    How do you determine the magnitude?
+                </th>
+            </tr>
+            <tr>
+                <td>Gravity</td><td>58.8 N</td><td>Down</td><td>\( F_g = mg = 2.00 \cdot 9.8 \)</td>
+            </tr>
+            <tr>
+                <td>Normal Force</td><td>58.8 N</td><td>Up</td><td>Must be equal to magnitude of gravity for no vertical motion.</td>
+            </tr>
+            <tr>
+                <td>Applied Force</td><td>35.0 N</td><td>Right</td><td>Given</td>
+            </tr>
+            <tr>
+                <td>Kinetic Friction</td><td>11.76 N</td><td>Left</td><td>\( F_{fr} = \mu_K \cdot F_N = 0.200 \cdot 58.8\)</td>
+            </tr>
+        </table>
+        <p style = 'magin-top: 20px'>
+            \( \Sigma F = 23.24 \text{N} \)
+            <br>
+            \( a =  3.87 \text{m/s}^2 \)</p>
+    </div>
+
+    <div class = 'pageBreak'></div>
+
+    <div>
+        <h4>Situation 3</h4>
+        <ol type = 'A'>
+            <li>
+                The magnitude of gravity and the normal force are both 49 N.
+            </li>
+            <li>
+                The maximum value of static friction is 19.6 N
+            </li>
+        </ol>
+
+        <table>
+            <tr class = 'smallRow'>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Force
+                </td>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Will the box begin to move?
+                </td>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Static for kinetic friction?
+                </td>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Magnitude of frictional force
+                </td>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Net Force Magnitude
+                </td>
+                <td style = 'padding-right: 10px; padding-left: 10px'>
+                    Acceleration Magnitude
+                </td>
+            </tr>
+            <tr>
+                <td>5.00 N</td> <td>No</td> <td>Static</td> <td>5.00 N</td> <td>0</td> <td>0</td>
+            </tr>
+            <tr>
+                <td>10.0 N</td> <td>No</td> <td>Static</td> <td>10.0 N</td> <td>0</td> <td>0</td>
+            </tr>
+            <tr>
+                <td>18.0 N</td> <td>No</td> <td>Static</td> <td>18.0 N</td> <td>0</td> <td>0</td>
+            </tr>
+            <tr>
+                <td>20.0 N</td> <td>Yes</td> <td>Kinetic</td> <td>3.92 N</td> <td>16.08 N</td> <td>3.22 m/s<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>25.0 N</td> <td>Yes</td> <td>Kinetic</td> <td>3.92 N</td> <td>21.08 N</td> <td>4.22 m/s<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>30.0 N</td> <td>Yes</td> <td>Kinetic</td> <td>3.92 N</td> <td>26.08 N</td> <td>5.22 m/s<sup>2</sup></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script src = '../sequentialFilesFunctions.js'></script>
+</body>
+</html>
