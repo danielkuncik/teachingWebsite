@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Physics Coding 3: Numpy</title>
+    <style>
+        code {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        p.directions {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 14px;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Mathjax-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 
 <h3>
     Physics Coding 3: Introduction to Numpy
@@ -16,11 +43,104 @@
     a much more commonly used way to make functions is with a package called <strong>Numpy</strong>.
     Numpy makes simple and easy to read code that we can use to solve complex scientific problems!
 </p>
-<p>
-    If you are this far ahead in the Physics Coding sequence, Google some information on Numpy
-    and play around with Numpy arrays and other basic Numpy commands.
-    Soon, I will write a simple Numpy tutorial.
-</p>
+
+
+<ol>
+    <li>
+        First, we need to add the Numpy commands.
+        When you are in Python, type
+        <code>
+            import numpy
+        </code>
+    </li>
+    <li>
+        Make a numpy array.
+        This is accomplished by wrapping a list in the <code>numpy.array()</code> command.
+        <br>
+        Try making an array, then testing some thigns about the array:
+        <code>
+            x = numpy.array([0,1,2,3,4])
+            <br>
+            print(x)
+            <br>
+            print(type(x)) # this tells you it is a numpy array!
+            <br>
+            x[0]
+            <br>
+            x[2]
+        </code>
+    </li>
+    <li>
+        One thing that is very useful about arrays is that if
+        you conduct some operation on the array,
+        you automatically conduct that operation on
+        every element of the array!
+        (In more traditional coding, you need to use an awkward
+        procedure called a for-loop for the same effect.)
+        See what happens if you multiply an array by 2!
+        <br>
+        <code>
+            x = numpy.array([0,1,2,3,4])
+            <br>
+            x = x * 2   #or you can type x *= 2
+            <br>
+            print(x)
+        </code>
+        What happened?
+        Try this again!
+        <br>
+        <code>
+            y = numpy.array([10,20,30,40,50])
+            <br>
+            y = 8 + 4 # or you cna type y += 4
+            <br>
+            print(y)
+        </code>
+    </li>
+    <li>
+        Arrays make graphing functions very simple!
+        For example, let's say I want to graph a parabolic function
+        \( y = x^2 \) over the range.
+        It is much easier to do this inside of a file,
+        so create a file entitled <code>graph_with_an_array.py</code>.
+        Enter this information into the file, then run it:
+        <br><br>
+        <code>
+            import numpy
+            <br>
+            import matplotlib
+            <br>
+            matplotlib.use('Agg')
+            <br>
+            import matplotlib.pyplot as plt
+            <br><br>
+            x = numpy.array([0,1,2,3,4,5,6,7,8,9,10])
+            <br>
+            y = x**2 #in python, two stars is the notation for an exponent
+            <br>
+            plt.plot(x,y)
+            <br>
+            plt.savefig('plot_with_array.png')
+        </code>
+        <br>
+        You should have a nice graph of a parabola!
+    </li>
+    <li>
+        As a challenge, see if you can adapt the method in
+        the previous item to graph different functions!
+        <ul>
+            <li>
+                A cubic function: \( y = x^3 \)
+            </li>
+            <li>
+                A square root function: \( y = \sqrt{x} \)
+            </li>
+            <li>
+                An exponential function: \( y = e^x \)
+            </li>
+        </ul>
+    </li>
+</ol>
 
 
 <!--
