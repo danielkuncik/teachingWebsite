@@ -132,6 +132,87 @@
             </code>
         </ul>
     </li>
+    <li>
+        Evil Knievel drives his motorcycle horizontally off of a cliff.
+        His motorcycle is moving at a horizontal speed of \( v_x \),
+        and the cliff has a height of \( h \).
+        Free-fall acceleration is given by \( g \).
+        a) Determine an equation for the time before Knievel strikes
+        the ground in terms of \( h \), and \( g \).
+        b) Determine how far Knievel travels on his motorcycle
+        before striking the ground in terms of \( v_x \), \( h \), and \( g \).
+    </li>
+    <li>
+        Create a function to determine the horizontal distance traveled when
+        something is lunached horizontally launched off of a cliff
+        of height h.
+        Call your function
+        <code>
+            find_horizontal_range(horizontal_speed, height, free_fall_acceleration)
+        </code>
+        Test your function with the following tests:
+        <ul>
+            <li>
+                <code>
+                    find_horizontal_range(1,1,1) # should return 1.14
+                </code>
+                <code>
+                    find_horizontal_range(20, 40, 9.81) # should return 560.3
+                </code>
+                <code>
+                    find_horizontal_range(3.56, 8.12, 4.32) # should return 29.8
+                </code>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Two cars get into a car crash.
+        The first car has a mass of \( m_A \) and a velocity before
+        the collision of \( v_A \).
+        The second car has a mass of \( m_B \) and a velocity before
+        the collision of \( v_B \).
+        After the collision, the two cars stick together (this is called a
+        <i>totally inelastic collision</i>).
+        The two cars combined have a velocity of \( v_f \).
+        <br>
+        Derive a formula for \( v_f \) in terms of \(m_A\), \(m_B\), \(v_A\), and \(v_B\).
+        <br>
+        Something to think about:
+        are the cars necessarily going the same direction (a rear-end)?
+        Could they be traveling in opposite directions (a head-on collision)?
+        How could either possibility be represented in the formula.
+    </li>
+    <li>
+        Create a function that calculates the final velocity
+        of two cars in a pefectly inelastic collision.
+        <code>
+            find_final_velocity(mass_a, mass_b, intial_velocity_A, initial_velocity_B)
+        </code>
+        Test your code with the following examples:
+        <ul>
+            <li>
+                <code>
+                    find_final_velocity(1,1,1,1) # should return 1
+                </code>
+            </li>
+            <li>
+                <code>
+                    find_final_velocity(10,15,6,-5) # should return 0.2
+                </code>
+            </li>
+            <li>
+                <code>
+                    find_final_velocity(8.2,4.9,-1.2,3.2) # should return 0.446
+                </code>
+            </li>
+        </ul>
+        <p>
+            Again, you may have problems if all of the inputs are <strong>integers</strong>
+            and you are doing division, because Python will cut off any remainders or decimals!
+            To fix this problem, use <code>mass_a = float(mass_a)</code>, and likewise
+            for all of your inputted values.
+        </p>
+    </li>
 </ol>
 
 
