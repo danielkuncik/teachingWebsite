@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        code {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        p.directions {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 14px;
+        }
+    </style>
+    <title>Physics Coding Challenges 1</title>
+</head>
+<body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Mathjax-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<h3>
+    Physics Coding Challenges 1: Creating Functions
+</h3>
+<p>
+    This document contains a series of challenges
+    to help you learn how to model
+</p>
+
+<ol>
+    <li>
+        The physics formula for acceleration is
+        $$
+        a = \frac{v_f - v_i}{\Delta t}
+        $$
+        Write a function named <code>find_acceleration</code>
+        that takes as arguments <code>initial_velocity</code>,
+        <code>final_velocity</code>, and <code>time</code>.
+        <br>
+        <code>
+            find_acceleration(final_velocity, initial_velocity, time)
+        </code>
+        <br>
+        If your function works well, you should be able to plug in
+        the following values and fidn the following results:
+        <ul>
+            <li>
+                <code>
+                    find_acceleration(10,2,2) # should return 4
+                </code>
+            </li>
+            <li>
+                <code>
+                    find_acceleration(2,10,2) # should return -4
+                </code>
+            </li>
+            <li>
+                <code>
+                    find_acceleration(20,3,5) # should return 3.6
+                </code>
+            </li>
+            <li>
+                <code>
+                    find_acceleration(0,0,0) # should return an error
+                </code>
+            </li>
+        </ul>
+        <p>
+            One likely problem you might have:
+            If all of the variables entered are integers,
+            then python will use <strong>integer division</strong>,
+            in which is cuts off the remainder in any division problem.
+            To sovle this problem, convert all inputs of your function to
+            floating point values with the following commands:
+            <br>
+            <code>
+                final_velocity = float(final_velocity)
+            </code>
+            <br>
+            <code>
+                intial_velocity = float(initial_velocity)
+            </code>
+            <br>
+            <code>
+                time = float(time)
+            </code>
+        </p>
+    </li>
+    <li>
+        Example Momentum Problem:
+        A cannon of mass \( M_c \) fires a cannonball of mass \( m_b \).
+        Before the explosion, the cannon and cannonball are both
+        stationary, afterwards the cannonball begins moving forward at a
+        speed of \( v_b \). Determine the velocity of the cannon
+        after the collision \( v_c \) in terms of \( M_c \), \( m_b \), and \( v_b \).
+        Note that you should receive a negative value (assuming \( v_b \) is positive)!
+    </li>
+    <li>
+        Write a function to find the recoil speed of a cannon after it fires a cannonball:
+        <br>
+        <code>
+            find_recoil_speed(mass_of_cannon, mass_of_cannonball, velocity_of_shot)
+        </code>
+        <br>
+        Note that, because you are attempting to find recoil <i>speed</i>, not velocity,
+        the answer you return should be positive!
+        <br>
+        Test your function with the following examples:
+        <ul>
+            <code>
+                find_recoil_speed(100,10,20)  # should return 2
+            </code>
+        </ul>
+        <ul>
+            <code>
+                find_recoil_speed(1,1,1)  # should return 1
+            </code>
+        </ul>
+        <ul>
+            <code>
+                find_recoil_speed(50.67,2.48,44.9)  # should return 2.19759226
+            </code>
+        </ul>
+    </li>
+</ol>
+
+
+<h4>
+    A special extra challenge for football fans:
+</h4>
+<p>
+    Create a function which calculates the passer rating of a quarterback!
+    Note: this doesn't really have much to do with physics,
+    but it requires precisely the same sorts of analytical
+    and programming skills as solving phyiscs problems.
+</p>
+<p>
+    You can look up how to calculate a passer rating in this
+    <a href = 'https://en.wikipedia.org/wiki/Passer_rating'>
+        Wikipedia article
+    </a>.
+</p>
+<p>
+    If you think that you have successfully created a function that calcualtes passer rating,
+    test it by plugging in some of <a href = 'https://www.pro-football-reference.com/players/B/BradTo00.htm'>Tom Brady's passing statistics</a>.
+</p>
+
+
+</body>
+</html>
