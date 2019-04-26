@@ -15,6 +15,33 @@
 
 
 <h4>
+    New Commands
+</h4>
+<ul>
+    <li>
+        <code>float()</code>: Converts a number into a floating point value.
+        Necessary for correctly dividing two numbers in a function, if you want an accurate decimal result
+    </li>
+    <li>
+        <code>import math</code>: Used as the first line of your program. Allows you to use a library of
+        mathematical operations in your program.
+    </li>
+    <li>
+        <code>math.sqrt()</code>: takes the square root of a number
+    </li>
+    <li>
+        <code>round()</code>: Rounds a number to a specified number of decimal places.
+        The command takes two arguments. The first argument is a number, and the second is the number of decimal
+        places you must round it to.
+    </li>
+</ul>
+<p>
+    It is a good idea, before completing the assignment, to test out these new functions!
+    Go into the <i>python console</i> by typing <code>python</code> in any terminal.
+    There, you can type any of these commands to test how they work!
+</p>
+
+<h4>
     Part 4: Calculator Operations:
 </h4>
 
@@ -42,6 +69,7 @@
 
 <p>
     $$ GPE = mgh $$
+    Use \( g = 9.81 \text{m}/\text{s}^2 \)
     $$ \Delta x = v_i (\Delta t) + \frac{1}{2} a (\Delta t)^2 $$
     $$ V = IR $$
     $$ a = \frac{v_f - v_i}{\Delta t} $$
@@ -63,7 +91,8 @@
         Create a function entitled <code>get_acceleration(final_velocity, initial_velocity, change_in_time).</code>
     </li>
     <li>
-        Create a function entitled <code>get_velocity_from_ke(kinetic_energy, mass)</code>
+        Create a function entitled <code>get_velocity_from_ke(kinetic_energy, mass)</code>.
+        This function will return the value of velocity by solving the kinetic energy equation!
     </li>
 </ol>
 
@@ -71,6 +100,9 @@
     To make sure each of your functions work properly,
     conduct the following tests.
     All values should be returned to two decimal places.
+    The values should <i>exactly</i> as they are here.
+    In order to efficiently run these tests, you can copy and paste these lines of code
+    into your program, and if they succeed, you can then delete them.
     <code>
         <br>
         print(get_gpe(4, 6))  # should return 235.44
@@ -110,6 +142,11 @@
         print(get_velocity_from_ke(241.512, 7.89))  # should return 7.82
     </code>
 
+</p>
+
+<p>
+    When you complete testing the assignment, and everything works well, your program should
+    include the <code>import math</code> line, five defined functions, and nothing else.
 </p>
 
 <p>
