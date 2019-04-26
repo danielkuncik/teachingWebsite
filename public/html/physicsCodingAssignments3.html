@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Coding Assignments 3</title>
+</head>
+<body>
+<!-- Mathjax-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<h3>
+    Coding assignments 3!
+</h3>
+
+
+<h4>
+    Part 4: Calculator Operations:
+</h4>
+
+<p>
+    Create a file in the <code>finished_assignments</code> folder called
+    <code>physics_functions.py</code>. All of the functions in this program should be run from this lesson.
+    The first line of your file should be <code>import math</code>.
+    This will allow you to use the <code>math.sqrt()</code> function throughout the file.
+</p>
+
+<p>
+    The goal of these assignments is to work on using Python as a calculator effectively.
+
+    All of the functions you will create are simple applications of physics formulas.
+
+    All functions should return answers rounded to two decimal places!
+</p>
+<p>
+    You can use the test commands that I wrote to help test that your file works!
+    However, after checking that these commands, work, you should delete them!
+    In the end, your file should have only the <code>import math</code> statement,
+    then five functions defined.
+</p>
+
+
+<p>
+    $$ GPE = mgh $$
+    $$ \Delta x = v_i (\Delta t) + \frac{1}{2} a (\Delta t)^2 $$
+    $$ V = IR $$
+    $$ a = \frac{v_f - v_i}{\Delta t} $$
+    $$ KE = \frac{1}{2} m v^2 $$
+</p>
+
+
+<ol start = '8'>
+    <li>
+        Create a function entitled <code>get_gpe(mass, height)</code>.
+    </li>
+    <li>
+        Create a function entitled <code>get_displacement(initial_velocity, acceleration, change_in_time)</code>.
+    </li>
+    <li>
+        Create a function entitled <code>get_current(voltage, resistance)</code>.
+    </li>
+    <li>
+        Create a function entitled <code>get_acceleration(final_velocity, initial_velocity, change_in_time).</code>
+    </li>
+    <li>
+        Create a function entitled <code>get_velocity_from_ke(kinetic_energy, mass)</code>
+    </li>
+</ol>
+
+<p>
+    To make sure each of your functions work properly,
+    conduct the following tests.
+    All values should be returned to two decimal places.
+    <code>
+        <br>
+        print(get_gpe(4, 6))  # should return 235.44
+        <br>
+        print(get_gpe(88.12, 5.1232))  # should return 4428.79
+        <br>
+        print(get_gpe(345, 12.56))  # should return 42508.69
+        <br>
+        print(get_displacement(1, 2, 3))  # should return 12.0
+        <br>
+        print(get_displacement(4.56, 21.23, 9.42))  # should return 984.89
+        <br>
+        print(get_displacement(5.67, 1, 3))  # should return 21.51
+        <br>
+        print(get_current(8, 2))  # should return 4.0
+        <br>
+        print(get_current(6.78, 21.39))  # should return 0.32
+        <br>
+        print(get_current(10, 9))  # should return 1.11
+        <br>
+        print(get_current(3, 10))  # should return 0.3
+        <br>
+        print(get_acceleration(5, 2, 3))  # should return 1.0
+        <br>
+        print(get_acceleration(10, 2, 5))  # should return 1.6
+        <br>
+        print(get_acceleration(12, 8, 8))  # should return 0.5
+        <br>
+        print(get_acceleration(3.45, 8.12, 0.12))  # should return -38.92
+        <br>
+        print(get_velocity_from_ke(100, 10))  # should return 4.47
+        <br>
+        print(get_velocity_from_ke(80, 1.6))  # should return 10.0
+        <br>
+        print(get_velocity_from_ke(800, 6))  # should return 16.31
+        <br>
+        print(get_velocity_from_ke(241.512, 7.89))  # should return 7.82
+    </code>
+
+</p>
+
+<p>
+    I will test these functions by running a series of commands.
+    I will run them from the <strong>terminal</strong>
+    in your <strong>workspace</strong> folder.
+    If your folders are not organized exactly as indicated
+    and your files are not named exactly as indicated,
+    the programs will not work!
+</p>
+
+</body>
+</html>
