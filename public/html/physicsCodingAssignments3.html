@@ -76,6 +76,9 @@
     $$ KE = \frac{1}{2} m v^2 $$
 </p>
 
+<h4>
+    Part 1: Make these functions
+</h4>
 
 <ol start = '8'>
     <li>
@@ -96,50 +99,61 @@
     </li>
 </ol>
 
+<h4>
+    Part 2: Test the functions
+</h4>
+
 <p>
     To make sure each of your functions work properly,
     conduct the following tests.
     All values should be returned to two decimal places.
     The values should <i>exactly</i> as they are here.
-    In order to efficiently run these tests, you can copy and paste these lines of code
+    In order to efficiently run these tests, you can <strong>copy and paste</strong> these lines of code
     into your program, and if they succeed, you can then delete them.
     <code>
+        <br><br><br>
+        print("If every number is exactly equal to the test value, you win!")
         <br>
-        print(get_gpe(4, 6))  # should return 235.44
+        print("Otherwise you need to change something.")
         <br>
-        print(get_gpe(88.12, 5.1232))  # should return 4428.79
+        print(str(get_gpe(4, 6)) + " => 235.44") # should return 235.55
         <br>
-        print(get_gpe(345, 12.56))  # should return 42508.69
+        print(str(get_gpe(88.12, 5.1232)) + " => 4428.79") # should return 4428.79
         <br>
-        print(get_displacement(1, 2, 3))  # should return 12.0
+        print(str(get_gpe(345, 12.56)) + " => 42508.69")  # should return 42508.69
         <br>
-        print(get_displacement(4.56, 21.23, 9.42))  # should return 984.89
+        print(str(get_displacement(1, 2, 3)) + " => 12.0")  # should return 12.0
         <br>
-        print(get_displacement(5.67, 1, 3))  # should return 21.51
+        print(str(get_displacement(4.56, 21.23, 9.42)) + " => 984.89")  # should return 984.89
         <br>
-        print(get_current(8, 2))  # should return 4.0
+        print(str(get_displacement(5.67, 1, 3)) + " => 21.41")  # should return 21.51
         <br>
-        print(get_current(6.78, 21.39))  # should return 0.32
+        print(str(get_current(8, 2)) + " => 4.0")  # should return 4.0
         <br>
-        print(get_current(10, 9))  # should return 1.11
+        print(str(get_current(6.78, 21.39)) + " => 0.32")  # should return 0.32
         <br>
-        print(get_current(3, 10))  # should return 0.3
+        print(str(get_current(10, 9)) + "=> 1.11")  # should return 1.11
         <br>
-        print(get_acceleration(5, 2, 3))  # should return 1.0
+        print(str(get_current(3, 10)) + " => 0.3")  # should return 0.3
         <br>
-        print(get_acceleration(10, 2, 5))  # should return 1.6
+        print(str(get_acceleration(5, 2, 3)) + " => 1.0")  # should return 1.0
         <br>
-        print(get_acceleration(12, 8, 8))  # should return 0.5
+        print(str(get_acceleration(10, 2, 5)) + " => 1.6")  # should return 1.6
         <br>
-        print(get_acceleration(3.45, 8.12, 0.12))  # should return -38.92
+        print(str(get_acceleration(12, 8, 8)) + " => 0.5")  # should return 0.5
         <br>
-        print(get_velocity_from_ke(100, 10))  # should return 4.47
+        print(str(get_acceleration(3.45, 8.12, 0.12)) + " => -38.92")  # should return -38.92
         <br>
-        print(get_velocity_from_ke(80, 1.6))  # should return 10.0
+        print(str(get_velocity_from_ke(100, 10)) + " => 4.47")  # should return 4.47
         <br>
-        print(get_velocity_from_ke(800, 6))  # should return 16.31
+        print(str(get_velocity_from_ke(80, 1.6)) + " => 10.0")  # should return 10.0
         <br>
-        print(get_velocity_from_ke(241.512, 7.89))  # should return 7.82
+        print(str(get_velocity_from_ke(800, 6)) + " => 16.31")  # should return 16.31
+        <br>
+        print(str(get_velocity_from_ke(241.512, 7.89)) + " => 7.82")  # should return 7.82
+        <br>
+        print("Once the program is successful, delete these lines!")
+        <br><br><br>
     </code>
 
 </p>
