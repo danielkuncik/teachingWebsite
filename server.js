@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Physics! <a href = '//gentle-badlands-17193.herokuapp.com'>Click Here<a>")
+    res.send("Welcome to Physics! <a href = '//508physics.com'>Click Here<a>")
 });
 
 app.listen(port, () => {
